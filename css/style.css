@@ -1,0 +1,211 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  background-color: #e3e2dd;
+  width: 100vw;
+}
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.row {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin: 0;
+}
+.header {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #0f4c81;
+  color: #ffffff;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+.header h2 {
+  font-size: 28px;
+  padding: 0 0px;
+  color: #ffffff;
+}
+.header h2 a {
+  color: #ffffff;
+}
+.header h2 a:hover {
+  text-decoration: none;
+}
+.nav-menu li {
+  font-size: 20px;
+  color: #ffffff;
+}
+.nav-menu li a {
+  color: #ffffff;
+}
+.nav-menu li a:hover {
+  color: #ffffff;
+}
+.nav-menu li a:visited {
+  color: #ffffff;
+}
+.nav-menu li a:active {
+  color: #ffffff;
+}
+.nav-menu li:hover {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #ffffff;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #e3e2dd;
+}
+.header__block {
+  padding-top: 100px;
+  background-image: url(../img/header_bg.jpg);
+  background-attachment: fixed;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+}
+.header__block .header__title {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 68vw;
+  margin: 10% auto 0 auto;
+}
+.header__block h1 {
+  color: #000000;
+  text-transform: uppercase;
+}
+.header__block .header__button {
+  margin-top: 10%;
+  background-color: #ffffff;
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+}
+.header__block .header__button a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+.header__block .header__button:hover {
+  background-color: rgba(255, 226, 221, 0.8);
+}
+.header__block .header__button:hover a {
+  color: #ffffff;
+  -webkit-text-stroke-width: 0.4px;
+  -webkit-text-stroke-color: #000000;
+}
+h2 {
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 0.4px;
+  -webkit-text-stroke-color: #ffffff;
+}
+.about {
+  padding: 50px 0 0 0;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  min-height: 100vh;
+}
+.about h2 {
+  margin: 30px auto 50px auto;
+}
+.about__block {
+  margin: 10px;
+}
+.about__block img {
+  width: 50px;
+  margin-bottom: 15px;
+}
+.block__title {
+  text-transform: uppercase;
+}
+.block__subtitle {
+  font-size: 20px;
+}
+.service {
+  padding: 70px 10px;
+  min-height: 100vh;
+}
+.service__block {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  background-color: #ffffff;
+  padding: 25px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.service__block img {
+  margin-bottom: 30px;
+}
+.plus {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background: fixed;
+  background-color: #ffffff;
+  min-height: 100vh;
+  padding: 70px 10px 0 10px;
+}
+.plus__title {
+  margin: 30px auto 50px auto;
+}
+.portfolio {
+  min-height: 100vh;
+  padding: 70px 10px 0 10px;
+}
+.portfolio__title {
+  margin: 30px auto 50px auto;
+}
+.portfolio__block img {
+  width: 100%;
+}
+.portfolio__block_title {
+  margin: 20px auto;
+}
+footer {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background: fixed;
+  background-color: #ffffff;
+  min-height: 100vh;
+  padding: 70px 0;
+  position: relative;
+}
+footer h2 {
+  margin-bottom: 50px;
+}
+footer .form-control {
+  height: 60px;
+}
+footer form button {
+  height: 60px;
+  width: 100%;
+}
+footer .footer__contact {
+  display: block;
+  height: 55px;
+}
+footer .footer__contact img {
+  height: 50px;
+  margin-right: 20px;
+}
+footer .footer__contact a {
+  color: #000000;
+  font-size: 28px;
+  vertical-align: middle;
+  text-align: center;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
