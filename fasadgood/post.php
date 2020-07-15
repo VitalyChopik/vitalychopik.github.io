@@ -7,7 +7,7 @@
 
 
 /* Сюда впишите свою эл. почту */
- $address = "chopikvitali@yandex.by";
+ $address = "Alikartemmarkrufina@yandex.by";
 
 /* А здесь прописывается текст сообщения, \n - перенос строки */
  $mes = "Тема: Заказ обратного звонка!\nТелефон: $tel\nИмя: $name\nE-mail: $email\nСообщение: $message";
