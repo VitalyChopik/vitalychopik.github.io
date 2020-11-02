@@ -1,0 +1,135 @@
+//colors
+@dark: #6C4556;
+@medium: #8B7C9A;
+@light: #D5A7C0;
+@white: #ffffff;
+
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+//presset 
+body {
+   font-family: 'Roboto Condensed', sans-serif;
+   font-size: 24px;
+   background-color: @light;
+   padding: 0;
+   margin: 0;
+}
+
+//setting
+nav {
+   color: @dark;
+ .logo {
+    width: 5.2rem;
+ }
+ ul {
+    display: inline-block;
+    margin: 0 auto;
+ }
+   li {
+      margin: 0 10px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.5rem;
+      line-height: 30px;
+      text-align: center;
+      &:hover {
+         font-size: 1.55rem;
+         color: @medium;
+      }
+   }
+   .callup {
+      display: inline-block;
+      margin: 0 auto;
+      //text-align: center;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 1.5rem;
+      line-height: 30px;
+      &:hover {
+         font-size: 1.6rem;
+      }
+   }
+}
+header {
+   background-image: url(../img/bg1.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   h1 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 3.5rem;
+      line-height: 3.25rem;
+      color: @light;
+      margin: 6rem auto 3rem auto;
+   }
+   .header__subtitle {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.8rem;
+      line-height: 2rem;
+      color: @dark;
+   }
+   .selection {
+      border: 3px solid @light;
+   
+      width: 355px;
+      margin: 4rem auto 10rem;
+      line-height: 4rem;
+      border-radius: 0.75rem;
+      a {
+        background-color: @light;
+        border-radius: 0.75rem;
+        padding: 1rem 6.19rem;
+        text-decoration: none;
+        color: @dark;
+
+      
+        
+      }
+      &:hover {
+         border: 3px solid @medium;
+      }
+      &:hover a{
+         background-color: @medium;
+         color: @light;
+      }
+   }
+}
+.assortment {
+   &__title {
+      color: @white;
+      margin-top: 5rem;
+      font-size: 2.5rem;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 3rem;
+      
+   }
+   &__main {
+      border: 5px solid @dark;
+      box-sizing: border-box;
+      border-radius: 30px;
+      padding: 4rem 0 5rem;
+   }
+   &__block {
+      margin-bottom: 1.5rem;
+      h3 {
+         margin-top: 2rem;
+         color: @white;
+      }
+      .price {
+         margin-bottom: 1.5rem;
+         font-size: 1.5rem;   
+      }
+      .buy-btn {
+         background-color: @dark;
+         padding: 5px 40px;
+         text-decoration: none;
+         color: @white;
+         border-radius: 1rem;
+         
+      }
+   }
+}
