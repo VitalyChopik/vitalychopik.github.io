@@ -240,3 +240,15 @@ footer .dev {
 footer .unp {
   text-align: center;
 }
+.expandable {
+  background: #fff;
+  overflow: hidden;
+  color: #000;
+  line-height: 50px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  height: 0;
+}
+.expandable:target {
+  height: 500px;
+}
