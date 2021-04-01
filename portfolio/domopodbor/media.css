@@ -133,7 +133,11 @@
 }
 @media (max-width: 1200px) {
   header {
-    min-height: 80vh;
+    min-height: 50vh;
+  }
+  header .sub__header {
+    position: relative;
+    margin-top: 15rem;
   }
   .b24-form-wrapper {
     width: 60%;
