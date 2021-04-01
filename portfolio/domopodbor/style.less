@@ -1,0 +1,227 @@
+//colors
+@main: #000000;
+@add: #ffffff;
+@auxiliary: #BB0303;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+
+.hidden {
+    display: none
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: @add;
+    background-color: #04131E;
+}
+.row {
+    margin: 0;
+}
+header {
+    
+    background-image: url(img/header__bg.png);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    min-height: 120vh;
+    background-color: rgba(0, 0, 0, 1.2);
+    position: relative;
+}
+
+
+nav {
+    padding-top: 2%;
+    
+    img {
+        float: left;    
+        margin-right: 5px;
+    }
+
+    a {
+        color: @add;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.4rem;
+        &:hover {
+            color: @auxiliary;
+        }
+    }
+}
+.nav-block {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    .logo {
+        margin-top: -15px;
+    }
+    p {
+        font-weight: bold;
+        text-transform: uppercase;
+        vertical-align: middle;
+    }
+    
+}
+.sub__header {
+    background-color:rgba(0, 0, 0, 0.6);
+    padding: 1.5rem 0 3rem;;
+    min-width: 100%;
+    position:absolute;
+    bottom:3%;
+    right:0;
+    h1 {
+        color: @auxiliary;
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin-bottom: 1rem;
+    }
+    p{
+        
+        width: 60%;
+        margin: 0 auto;
+        font-size: 1.5rem;
+        margin-bottom: 5%;
+    }
+    .btn {
+        padding: 1rem 6rem;
+    }
+}
+.btn {
+    color:@add;
+    border: 3px @auxiliary solid;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 4px 1px rgba(187, 3, 3, 0.82);
+    border-radius: 0;
+    
+    font-size: 1.2rem;
+    font-weight: 700;
+    &:hover {
+        background-color: @auxiliary;
+        color: @add;
+    }
+}
+section {
+    
+    padding-bottom: 10rem;
+}
+.advantages {
+    padding-top: 6%;
+    
+    img {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 7%;
+    }
+    h2 {
+        text-align: center;
+        color: @add;
+        font-size: 1.2rem;
+    }
+}
+.service {
+    h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 5rem;
+    }
+    .btn {
+        width: 100%;
+        padding: 1rem ;
+        margin-bottom: 3rem;
+        font-size: 1.4rem;
+        font-weight: bold;
+        &:active {
+            background-color: @auxiliary;
+        }
+        &:focus {
+            background-color: @auxiliary;
+            box-shadow:none;
+        }
+
+    }
+}
+
+.form {
+    background-image: url(img/form_bg.png);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-color: rgba(0, 0, 0, 1.2);
+    padding: 5rem;
+    min-height: 100vh;
+    h2 {
+        color: @auxiliary;
+        margin-bottom: 1.5rem;
+        font-size: 3rem;
+    }
+    h3 {
+        width: 40%;
+        margin: 0 auto 3rem;
+        font-size: 1.3rem;
+    }
+    .b24-form-wrapper {
+        background: none;
+        width: 40%;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+    .b24-form-control-container {
+        border: 3px @auxiliary solid;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 4px 1px rgba(187, 3, 3, 0.82);
+        border-radius: 0;
+        margin-bottom: 3rem;
+        .b24-form-control-label {
+            color: #818181;
+            text-align-last: left;
+        }
+        input {
+            color: #818181;
+        }
+
+    }
+    .b24-form-btn {
+        background-color: @auxiliary;
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        height: auto;
+        &:hover {
+            background-color:@add;
+            color:@auxiliary;
+        }
+    }
+    .b24-form-sign {
+        display: none;
+    }
+    .b24-form-wrapper.b24-form-border-bottom {
+        border:none;
+    }
+}
+footer {
+    padding: 2rem 0 0;
+    nav {
+        margin-bottom: 2rem;
+        .nav-block {
+            img {
+                margin-top: -15px;
+            }
+        }
+    }
+    div {
+        margin-bottom: 1rem;
+    }
+    .dev {
+        margin: 0 auto;
+        color: #5B5B5B;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+    .unp {
+        text-align: center;
+    }
+}
