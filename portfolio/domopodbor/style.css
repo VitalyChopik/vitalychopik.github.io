@@ -157,6 +157,9 @@ section {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+.service p {
+  line-height: 2rem;
+}
 .form {
   background-image: url(img/form_bg.png);
   background-repeat: no-repeat;
@@ -220,7 +223,7 @@ footer {
 footer nav {
   margin-bottom: 2rem;
 }
-footer nav .nav-block img {
+footer nav .nav-block .logo {
   margin-top: -15px;
 }
 footer div {
