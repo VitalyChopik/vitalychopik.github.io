@@ -70,4 +70,24 @@ h3 {
 }
 .home-btn {
   vertical-align: middle;
+  margin-top: 200px;
+}
+.subtitle {
+  color: #4C7CEE;
+}
+.home__title {
+  line-height: 70px;
+  margin-bottom: 80px;
+  margin-top: 60px;
+}
+.home__subtitle {
+  line-height: 40px;
+  margin-bottom: 60px;
+}
+.title-keywords {
+  line-height: 70px;
+  margin-bottom: 90px;
+}
+.home-page {
+  height: 100vh;
 }
