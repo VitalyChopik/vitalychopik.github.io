@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: 
+
+User-agent: Yandexbot
+Disallow: 
+Host: www.sarp.by
+Sitemap: https://sarp.by/sitemaps.xml
+
+User-agent: googlebot
+Disallow: 
+Host: www.sarp.by
+Sitemap: https://sarp.by/sitemaps.xml

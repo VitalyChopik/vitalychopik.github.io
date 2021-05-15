@@ -1,0 +1,107 @@
+// Экстрамалые девайсы («портретные телефоны», < 576px)
+@media (max-width: 575.98px) { 
+    .advantages__block {
+        .box {
+            padding: 0rem 0.3rem;
+
+
+        }
+    }
+ }
+
+// Малые девайсы («ландшафтные», >= 575px)
+@media (max-width: 767.98px) { }
+
+// Средние девайсы («таблетки», >= 768px) 
+@media  (max-width: 991.98px) { 
+    header {
+
+        width: 100%;
+        background-image: none;
+        background-color: #ffffff;
+        .header {
+            width: 100%;
+
+            a {
+                margin-bottom: 3rem;
+            }
+        }
+    
+    }
+    .advantages {
+        h2 {
+            padding-left: 0;
+        }
+        
+    }
+    .service {
+        padding: 0;
+        &__box {
+            margin-bottom: 5rem;
+        }
+
+    }
+    .carousel-item {
+        max-height: 30rem;
+        overflow: hidden;
+
+   }
+ }
+ .data {
+    text-align: center;
+ }
+
+// Большие девайсы (большие десктопы, >= 992px)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    nav {
+
+        margin-bottom: 1rem;
+    }
+    .header {
+        h1 {
+            padding-left: 1rem;
+
+        }
+        p {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        a {
+        display: block;
+        margin: 0 auto 10rem;
+
+        }
+    }
+    .advantages {
+        h2 {
+            padding-left: 0;
+        }
+    }
+    .service {
+        padding: 0;
+    }
+    .carousel-item {
+        max-height: 30rem;
+        overflow: hidden;
+
+   }
+   .data {
+       text-align: left;
+   }
+ }
+
+// Большие девайсы (большие десктопы, >= 1200px)
+@media (min-width: 1200px) { 
+    .carousel {
+        width: 50%;
+        margin: 0 auto;
+    }
+        .carousel-item {
+                max-height: 30rem;
+                overflow: hidden;
+
+        }
+        .data {
+            text-align: left;
+        }
+ }
