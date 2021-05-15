@@ -22,3 +22,17 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
+.btn-trable {
+  border: 3px solid #FFE300;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+.btn-trable:hover {
+  background-color: #FFE300;
+  color: #111111;
+}
+.trable .col-xl-4 {
+  margin-bottom: 30px;
+}
