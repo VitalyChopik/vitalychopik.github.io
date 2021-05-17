@@ -35,12 +35,14 @@ h3 {
     text-align: center;
     
     font-size: 20px;
+    vertical-align: middle;
     &:hover {
         background-color:@yellow;
         color:@black;
     }
 }
 .trable {
+    
     .col-xl-4 {
         margin-bottom: 30px;
     }
@@ -50,7 +52,6 @@ h3 {
 .transition  {
     
     margin: 40px 0;
-    height: 100%;
     
     a {
         display: inline-block;
@@ -67,8 +68,21 @@ h3 {
     }
 }
 .home-btn {
-    vertical-align: middle;
-    margin-top: 200px;
+    margin: 40px 0;
+    
+    a {
+        display: inline-block;
+        margin: 0 auto;
+        border: 8px solid @blue;
+        border-radius: 25px;
+        padding: 20px 50px;
+        font-size: 20px;
+        font-weight: bold;
+        &:hover {
+            background-color:@blue;
+            color:@white;
+        }
+    }
 }
 
 
@@ -77,20 +91,21 @@ h3 {
 }
 
 .home {
+      height: 100vh;
+      background-image: url(img/sozdanie-sajtov.png);
+      background-repeat: no-repeat;
+      background-size: 50%;
+      background-position: 100% 35%;
+      
     &__title {
-        line-height: 70px;
-        margin-bottom: 80px;
         margin-top: 60px;
+        text-align: left;
     }
     &__subtitle {
-        line-height: 40px;
-        margin-bottom: 60px;
+        text-align: left;
     }
 }
 .title-keywords {
-    line-height: 70px;
     margin-bottom: 90px;
-}
-.home-page {
-    height: 100vh;
+    text-align: left;
 }

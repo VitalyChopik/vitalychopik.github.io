@@ -43,6 +43,7 @@ h3 {
   border-radius: 25px;
   text-align: center;
   font-size: 20px;
+  vertical-align: middle;
 }
 .btn-trable:hover {
   background-color: #FFE300;
@@ -53,7 +54,6 @@ h3 {
 }
 .transition {
   margin: 40px 0;
-  height: 100%;
 }
 .transition a {
   display: inline-block;
@@ -69,25 +69,39 @@ h3 {
   color: #FFFFFF;
 }
 .home-btn {
-  vertical-align: middle;
-  margin-top: 200px;
+  margin: 40px 0;
+}
+.home-btn a {
+  display: inline-block;
+  margin: 0 auto;
+  border: 8px solid #4C7CEE;
+  border-radius: 25px;
+  padding: 20px 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.home-btn a:hover {
+  background-color: #4C7CEE;
+  color: #FFFFFF;
 }
 .subtitle {
   color: #4C7CEE;
 }
+.home {
+  height: 100vh;
+  background-image: url(img/sozdanie-sajtov.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: 100% 35%;
+}
 .home__title {
-  line-height: 70px;
-  margin-bottom: 80px;
   margin-top: 60px;
+  text-align: left;
 }
 .home__subtitle {
-  line-height: 40px;
-  margin-bottom: 60px;
+  text-align: left;
 }
 .title-keywords {
-  line-height: 70px;
   margin-bottom: 90px;
-}
-.home-page {
-  height: 100vh;
+  text-align: left;
 }
