@@ -69,30 +69,37 @@ h3 {
   color: #FFFFFF;
 }
 .home-btn {
-  margin: 40px 0;
+  margin: 20px 0;
+  position: relative;
+  height: 100px;
+  width: 100%;
 }
 .home-btn a {
-  display: inline-block;
-  margin: 0 auto;
-  border: 8px solid #4C7CEE;
+  position: absolute;
+  left: 0;
+  width: 450px;
+  border: 8px solid #FFE300;
   border-radius: 25px;
   padding: 20px 50px;
-  font-size: 20px;
+  font-size: 32px;
   font-weight: bold;
 }
 .home-btn a:hover {
-  background-color: #4C7CEE;
-  color: #FFFFFF;
+  background-color: #FFE300;
+  color: #111111;
 }
 .subtitle {
   color: #4C7CEE;
 }
-.home {
+section {
   height: 100vh;
+}
+.home {
   background-image: url(img/sozdanie-sajtov.png);
   background-repeat: no-repeat;
   background-size: 50%;
-  background-position: 100% 35%;
+  background-position: 80% 35%;
+  padding-top: 40px;
 }
 .home__title {
   margin-top: 60px;
@@ -100,8 +107,11 @@ h3 {
 }
 .home__subtitle {
   text-align: left;
+  color: #4C7CEE;
 }
 .title-keywords {
-  margin-bottom: 90px;
+  display: block;
+  width: 100%;
+  margin-bottom: 50px;
   text-align: left;
 }

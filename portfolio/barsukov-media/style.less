@@ -68,19 +68,22 @@ h3 {
     }
 }
 .home-btn {
-    margin: 40px 0;
-    
+    margin: 20px 0;
+    position: relative;
+    height: 100px;
+    width: 100%;
     a {
-        display: inline-block;
-        margin: 0 auto;
-        border: 8px solid @blue;
+      position: absolute;
+        left: 0;
+        width: 450px;
+        border: 8px solid @yellow;
         border-radius: 25px;
         padding: 20px 50px;
-        font-size: 20px;
+        font-size: 32px;
         font-weight: bold;
         &:hover {
-            background-color:@blue;
-            color:@white;
+            background-color:@yellow;
+            color:@black;
         }
     }
 }
@@ -90,12 +93,16 @@ h3 {
     color:@blue;
 }
 
+section {
+    height: 100vh;
+}
 .home {
-      height: 100vh;
+      
       background-image: url(img/sozdanie-sajtov.png);
       background-repeat: no-repeat;
       background-size: 50%;
-      background-position: 100% 35%;
+      background-position: 80% 35%;
+      padding-top: 40px;
       
     &__title {
         margin-top: 60px;
@@ -103,9 +110,13 @@ h3 {
     }
     &__subtitle {
         text-align: left;
+        color: @blue;
     }
+
 }
 .title-keywords {
-    margin-bottom: 90px;
+    display: block;
+    width: 100%;
+    margin-bottom: 50px;
     text-align: left;
 }
