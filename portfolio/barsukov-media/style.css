@@ -140,3 +140,10 @@ section {
 .flex-block .box-5 {
   flex: 1;
 }
+input[type="checkbox"] {
+  display: none;
+}
+input[type='checkbox']:checked + label {
+  background-color: #FFE300;
+  color: #111111;
+}
