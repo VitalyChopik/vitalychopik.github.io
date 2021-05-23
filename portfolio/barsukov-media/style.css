@@ -87,7 +87,7 @@ h3 {
   color: #4C7CEE;
 }
 section {
-  height: 100vh;
+  min-height: 80vh;
 }
 .start-slide {
   background-image: url(img/sozdanie-sajtov.png);
