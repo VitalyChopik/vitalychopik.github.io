@@ -40,8 +40,17 @@ h3 {
 }
 .transition {
   margin: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.transition-box {
+  display: flex;
+  flex-basis: 30%;
+  justify-content: center;
 }
 .transition a {
+  cursor: pointer;
   display: inline-block;
   margin: 0 auto;
   border: 8px solid #4C7CEE;
@@ -78,7 +87,7 @@ h3 {
   color: #4C7CEE;
 }
 section {
-  min-height: 100vh;
+  height: 100vh;
 }
 .start-slide {
   background-image: url(img/sozdanie-sajtov.png);
@@ -146,4 +155,20 @@ input[type="checkbox"] {
 input[type='checkbox']:checked + label {
   background-color: #FFE300;
   color: #111111;
+}
+input[type='checkbox'] + label {
+  cursor: pointer;
+}
+input[type="radio"] {
+  display: none;
+}
+input[type='radio']:checked + label {
+  background-color: #FFE300;
+  color: #111111;
+}
+input[type='radio'] + label {
+  cursor: pointer;
+}
+.hidden {
+  display: none;
 }
