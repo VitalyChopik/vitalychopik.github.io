@@ -59,7 +59,8 @@ header {
   padding-top: 1.8rem;
   background-image: url(../images/header_bg.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+  background-position:bottom center;
   position: relative;
   h1 {
     font-size: 2.375rem;
@@ -133,35 +134,62 @@ header {
   }
 }
 
+.navbar-toggler-icon {
+  background-image: url(../images/icon/burger.svg);
+}
+
 nav {
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.navigation {
+  flex-direction: row;
+  min-height: 0rem;
   border-radius: 15px;
   margin: 2.6rem 0 3.3rem;
-  padding-top: 1.1rem;
-  padding-bottom: 1.1rem;
 
+  background: #FFFFFF;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25); 
+  width: 100%; 
   .navbar-nav {
-    // display: flex;
-    // flex-basis: 100%;
-    // justify-content: space-around;
-    width: 100%;
-    text-align: center;
-    .nav-item {
-      margin: 0 auto;
-    }
-  }
+      justify-content: space-around;
+      width: 100%;
+      text-align: center;
+      padding-top: 1.1rem;
+      padding-bottom: 1.1rem;
+  } 
 }
-.navbar-light .navbar-nav .nav-link {
+.logo {   
+  order: 1;
+}
+.number { 
+  order: 2;
+  flex-direction: column;
+}
+.social {
+  order: 3;
+}
+.feedback {
+  order: 4;
+}
+
+.navbar-nav .nav-link {
   color: @dark;
   font-weight: 400;
   font-size: 1.375rem;
 }
-.navbar-light .navbar-nav .nav-link.active {
+.navbar-nav .nav-link.active {
   color: @orange;
   font-weight: 500;
 }
-.navbar-light .navbar-nav .nav-link:focus,
-.navbar-light .navbar-nav .nav-link:hover {
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover {
   color: @orange;
 }
 .feadback-box {
@@ -169,7 +197,7 @@ nav {
   border-radius: 15px;
   padding: 1.56rem 0.94rem;
   margin-top: 10rem;
-  width: 100%;
+  width: 90%;
   text-align: center;
   p {
     font-size: 0.875rem;
@@ -195,18 +223,19 @@ nav {
 .advantages {
   background-image: url(../images/people-header.png);
   background-repeat: no-repeat;
-  background-position: 100% 30%;
+  background-position: 90% 30%;
   padding-bottom: 12rem;
 }
 .position {
   position: absolute;
-  left: 25%;
+  left: 22.5%;
   bottom: -10%;
   padding-right: 6.8rem;
   padding-bottom: 2.5rem;
   background-image: url(../images/icon/circles.svg);
   background-repeat: no-repeat;
   background-position: 100% 100%;
+  width: 65%;
 }
 .card-square {
   background-image: url(../images/icon/black-square.svg);
@@ -219,13 +248,13 @@ nav {
   border-radius: 15px;
   padding: 1rem;
   background: #ffffff;
-
+  
   .card-box {
     border: 1px dashed rgba(0, 0, 0, 0.35);
     box-sizing: border-box;
     border-radius: 15px;
-    padding: 0 5rem;
-    width: 700px;
+    padding: 1rem 5rem;
+    width: 100%;
     img {
       float: left;
     }
@@ -287,6 +316,7 @@ nav {
 .material {
   padding-top: 6rem;
   margin-bottom: 6rem;
+  background-color: #fff;
   background-image: url(../images/materials.png);
   background-repeat: no-repeat;
   background-position: 75% 100%;
@@ -395,6 +425,9 @@ nav {
       max-height: 90px;
     }
   }
+  .scroll {
+    display: none;
+  }
   .check {
     background-color: #ececec;
     border-radius: 22px;
@@ -479,11 +512,12 @@ padding: 2.5rem 2rem;
   }
   ul {
     list-style-image: url(../images/icon/Ellipse.svg);
-    margin-bottom: 4.5rem;
+    margin-bottom: 2.5rem;
   }
-  hr {
-    border: 1px dashed rgba(255, 255, 255, 0.4);
-    margin-bottom: 2.8rem;
+  .btn-connect {
+    border-top: 1px dashed rgba(255, 255, 255, 0.4);
+    padding-top: 2.3rem;
+    margin-bottom: 1rem;
   }
   button {
     float: right;
@@ -549,7 +583,7 @@ padding: 2.5rem 2rem;
     margin: 0 -3rem;
   }
 
-  .slick-prev:before, .slick-next:before {
+  .slick-prev , .slick-next:before {
     color: @orange;
     font-size: 3.25rem;
   }
@@ -598,6 +632,7 @@ padding: 2.5rem 2rem;
       font-weight: 600;
       font-size: 1.2rem;
       line-height: 1.4rem;
+      text-transform: none;
       
     }
     .call-btn {
@@ -745,6 +780,7 @@ padding: 2.5rem 2rem;
     flex-basis: 15%;
   }
   &-block {
+    flex-wrap: wrap;
     justify-content: space-around;
     background-image: url(../images/border.svg);
     background-repeat: no-repeat;
@@ -817,6 +853,7 @@ padding: 2.5rem 2rem;
     }
     &:checked + label + .accordion-body {
       height: auto;
+      width: 100%;
       background: #FFFFFF;
       
     }
@@ -965,18 +1002,24 @@ footer {
   background-size: cover;
   background-position: 50%;
   .brand {
-    width: 15%;
+    width: 25%;
     margin: 0 auto;
     text-align: center; 
+    button {
+      color: #FFFFFF;
+    }
   }
   .footer-logo {
+    display: block;
     
-    width: 100%;
+    margin: 0 auto 1rem;
     
     img {
-      float: left;
-    //  margin-right: 0.5rem;
+      height: 4rem;
+      width: 100%;
     }
+    
+
     p {
       display: inline-block;
       color:@light;
