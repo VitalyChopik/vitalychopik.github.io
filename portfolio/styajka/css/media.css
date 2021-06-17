@@ -44,6 +44,7 @@
   }
   .social {
     padding-top: 0;
+    margin-top: 0;
   }
   .social img {
     margin-bottom: 1rem;
@@ -52,6 +53,12 @@
   .burger {
     margin-top: 1rem;
     float: right;
+  }
+  .number {
+    margin-bottom: 0;
+  }
+  .number p {
+    margin-bottom: 0;
   }
   .advantages {
     background-position: 100% 100%;
@@ -249,6 +256,7 @@
   .allin {
     padding: 1rem 0rem;
     background-image: none;
+    width: 100%;
   }
   .allin h2 {
     font-size: 1.3rem;
@@ -264,6 +272,7 @@
     background-image: none;
   }
   .allin .scroll {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -504,6 +513,9 @@
   }
   .mode {
     padding: 5rem 0;
+  }
+  .mode .img-pos {
+    left: 9%;
   }
   .mode h2 {
     font-size: 1.3rem;
