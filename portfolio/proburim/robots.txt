@@ -1,0 +1,22 @@
+User-agent: *
+Disallow: 
+
+User-agent: Yandexbot
+Disallow: 
+Host: www.proburim.by
+Sitemap: https://proburim.by/sitemaps.xml
+
+User-agent: googlebot
+Disallow: 
+Host: www.proburim.by
+Sitemap: https://proburim.by/sitemaps.xml
+
+User-agent: Yandexbot
+Disallow: 
+Host: www.proburim.by
+Sitemap: http://proburim.by/sitemaps.xml
+
+User-agent: googlebot
+Disallow: 
+Host: www.proburim.by
+Sitemap: http://proburim.by/sitemaps.xml
