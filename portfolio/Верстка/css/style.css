@@ -1,0 +1,563 @@
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmsans/v6/rP2Hp2ywxg089UriOZQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmsans/v6/rP2Cp2ywxg089UriASitOB8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v9/zYXgKVElMYYaJe8bpLHnCwDKtdY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v3/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuOKfMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v3/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v3/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuI6fMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v3/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuGKYMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9V1s.ttf) format('truetype');
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+}
+.container-my {
+  max-width: 1120px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+h2 {
+  font-size: 60px;
+  line-height: 140%;
+  letter-spacing: 1px;
+}
+.about {
+  padding-top: 36px;
+  margin-bottom: 173px;
+}
+.about .nav {
+  padding-top: 40px;
+  padding-left: 0;
+  margin-bottom: 128px;
+}
+.about .nav-link {
+  padding: 0 10px;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.6;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 140%;
+}
+.about .nav-link:first-child {
+  padding-left: 0;
+}
+.about .nav .disabled {
+  opacity: 0.3;
+}
+.about h1 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 140%;
+  letter-spacing: 1px;
+  margin-bottom: 37px;
+}
+.about p {
+  font-weight: 300;
+  line-height: 160%;
+  width: 100%;
+}
+.about p span {
+  text-decoration: underline;
+  font-weight: 400;
+}
+.about__text {
+  margin-top: 320px;
+}
+.about__text p {
+  width: 100%;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 160%;
+  letter-spacing: 1px;
+}
+.description {
+  background-image: url(../img/bg-1.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding-top: 182px;
+  padding-bottom: 420px;
+  margin-bottom: 220px;
+}
+.description p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 200%;
+  color: #ffffff;
+  width: 95%;
+}
+.career {
+  margin-bottom: 230px;
+}
+.career p {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 33px;
+  line-height: 160%;
+  letter-spacing: 1px;
+}
+.career p span {
+  font-weight: 700;
+}
+.experience {
+  margin-bottom: 180px;
+}
+.experience img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.experience h4 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 1px;
+  padding-top: 30px;
+  margin-bottom: 60px;
+}
+.experience ul {
+  margin-bottom: 65px;
+}
+.experience ul li {
+  list-style-image: url(../img/list-style.svg);
+  margin-bottom: 34px;
+  padding-left: 28px;
+}
+.experience ul li span {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+.experience ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+}
+.experience p {
+  font-size: 17.8px;
+  font-weight: 300;
+  line-height: 160%;
+}
+.experience .brand {
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.experience .brand img {
+  margin-right: 26px;
+}
+.experience .factory img {
+  margin-bottom: 10px;
+}
+.education {
+  margin-bottom: 240px;
+}
+.education-text {
+  padding-top: 30px;
+}
+.education h6 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 1px;
+  margin-bottom: 21px;
+}
+.education p {
+  font-weight: 500;
+  line-height: 160%;
+  opacity: 0.6;
+}
+.education .text {
+  padding-top: 86px;
+}
+.education .text p {
+  font-weight: 300;
+  line-height: 160%;
+  opacity: 1;
+}
+.education .team {
+  margin-top: 139px;
+}
+.map {
+  margin-bottom: 200px;
+}
+.map .asia {
+  background-image: url(../img/map.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 10% 50%;
+  margin-bottom: 250px;
+}
+.map .asia p {
+  padding: 125px 45px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 180%;
+  letter-spacing: 1px;
+}
+.map .africa {
+  background-image: url(../img/map-africa.png);
+  background-repeat: no-repeat;
+  background-size: content;
+  background-position: 85% 50%;
+}
+.map .africa p {
+  padding: 175px 0px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19.5px;
+  line-height: 180%;
+  letter-spacing: 1px;
+}
+.partner {
+  margin-bottom: 207px;
+}
+.partner img {
+  margin-bottom: 15px;
+}
+.advantage {
+  margin-bottom: 208px;
+}
+.advantage p {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22.7px;
+  line-height: 180%;
+  letter-spacing: 1px;
+}
+.social {
+  padding-top: 200px;
+  background: #F5F5F4;
+  padding-bottom: 105px;
+}
+.social h2 {
+  padding-left: 40px;
+  margin-bottom: 88px;
+}
+.social__block {
+  padding-left: 40px;
+  margin-bottom: 120px;
+}
+.social__block .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 180px;
+  background: #ffffff;
+  margin-bottom: 45px;
+}
+.social__block a {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 160%;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #0B0C0D;
+}
+.social__block a img {
+  margin-left: 20px;
+}
+.social .width {
+  width: 80%;
+}
+.social .down {
+  padding-top: 89px;
+}
+.blog {
+  padding-top: 175px;
+  margin-bottom: 200px;
+}
+.blog h2 {
+  margin-bottom: 85px;
+}
+.blog__block img {
+  border-radius: 6px;
+  margin-bottom: 32px;
+}
+.blog__block .date {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.3px;
+  margin-bottom: 16px;
+}
+.blog__block .title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: -0.4px;
+  margin-bottom: 16px;
+  color: #000000;
+  text-decoration: none;
+}
+.blog__block .excerpt {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.355556px;
+  margin-bottom: 50px;
+}
+.blog__block .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #000000;
+  opacity: 0.6;
+  margin: 0;
+  padding: 0;
+}
+.blog__block .link img {
+  margin-left: 14px;
+  padding-top: 7px;
+}
+.feedback {
+  margin-bottom: 0;
+  padding-top: 100px;
+  background-image: url(../img/bg-3.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.feedback h2 {
+  color: #ffffff;
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -2px;
+  margin-bottom: 55px;
+}
+.feedback form input,
+.feedback form textarea,
+.feedback form button {
+  border: none;
+  border-radius: 6px;
+  padding: 15px 0px 15px 24px;
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.36px;
+  outline: none;
+}
+.feedback form input::-webkit-input-placeholder,
+.feedback form textarea::-webkit-input-placeholder,
+.feedback form button::-webkit-input-placeholder {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.36px;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+.feedback form input:-ms-input-placeholder,
+.feedback form textarea:-ms-input-placeholder,
+.feedback form button:-ms-input-placeholder {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.36px;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+.feedback form input::-ms-input-placeholder,
+.feedback form textarea::-ms-input-placeholder,
+.feedback form button::-ms-input-placeholder {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.36px;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+.feedback form input::placeholder,
+.feedback form textarea::placeholder,
+.feedback form button::placeholder {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.36px;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+.feedback form input-internal-autofill-selected,
+.feedback form textarea-internal-autofill-selected,
+.feedback form button-internal-autofill-selected {
+  background-color: #ffffff;
+}
+.feedback form input {
+  margin-bottom: 30px;
+  padding-left: 60px;
+  background-repeat: no-repeat;
+  /*Убираем повтор изображения*/
+  background-position: 20px;
+  /*Позиционируем*/
+  /*убираем стандартную обводку браузера*/
+}
+.feedback form .name {
+  background-image: url(../img/Profile.svg);
+}
+.feedback form .email {
+  background-image: url(../img/email.svg);
+}
+.feedback form textarea {
+  height: 240px;
+  margin-bottom: 30px;
+}
+.feedback form textarea::-webkit-input-placeholder {
+  margin-top: 25px;
+}
+.feedback form textarea:-ms-input-placeholder {
+  margin-top: 25px;
+}
+.feedback form textarea::-ms-input-placeholder {
+  margin-top: 25px;
+}
+.feedback form textarea::placeholder {
+  margin-top: 25px;
+}
+.feedback form button {
+  display: block;
+  width: 255px;
+  height: 56px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+  background-color: #000000;
+  color: #ffffff;
+  margin-bottom: 90px;
+}
+footer {
+  background-color: #000000;
+  padding: 38px 0;
+}
+footer .block {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer p {
+  margin-bottom: 0;
+  color: #ffffff;
+  font-style: normal;
+}
+footer .brand {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 1px;
+}
+footer .footer-message {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 160%;
+  opacity: 0.4;
+}
