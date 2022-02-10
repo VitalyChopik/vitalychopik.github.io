@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap')
+$rubik: 'Rubik', sans-serif
+$gray: #4F5665
+$dark: #0B132A
+$red: #F53855
+$red-btn: #F53838
+body
+    padding: 0
+    margin: 0
+    font-family: $rubik
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 19px
+    color: $dark
+.container
+    max-width: 1180px
+    width: 100%
+    padding: 0 20px
+    margin: 0 auto
+
+.section__title
+    font-style: normal
+    font-weight: 500
+    font-size: 35px
+    line-height: 50px
+    text-align: center
+    color: $dark
+
+    max-width: 383px
+    margin: 0 auto
+    margin-bottom: 20px
+.section__subtitle
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 30px
+    text-align: center
+    color: $gray
+    max-width: 555px
+    margin: 0 auto
+    margin-bottom: 60px
+.header
+    .navbar
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 50px
+        margin-bottom: 100px
+    &__nav
+        max-width: 450px
+        width: 100%
+        display: flex
+        justify-content: space-between
+        .nav-link
+            text-decoration: none
+            color: $gray
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 19px
+            &:hover
+                border-bottom: 1px solid $gray
+    .login
+        display: flex
+        flex-wrap: nowrap
+        align-items: center
+        a
+            text-decoration: none
+        .signin
+            font-style: normal
+            font-weight: 500
+            font-size: 16px
+            line-height: 19px
+            color: $dark
+            margin-right: 30px
+            &:hover
+                border-bottom: 1px solid $dark
+        .signup
+            border: 1px solid $red
+            box-sizing: border-box
+            border-radius: 50px
+            width: 150px
+            height: 45px
+            display: flex
+            justify-content: center
+            align-items: center
+            font-style: normal
+            font-weight: 500
+            font-size: 16px
+            line-height: 19px
+            color: $red
+            &:hover
+                background-color: $red
+                color: #ffffff
+
+.head
+    &__section
+        background-image: url(../img/head.svg)
+        background-repeat: no-repeat
+        background-position: 90% 0%
+        margin-bottom: 95px
+    &__box
+        margin-bottom: 100px
+        max-width: 555px
+        width: 100%
+        padding-top: 5px
+    &__title
+        font-style: normal
+        font-weight: 500
+        font-size: 50px
+        line-height: 70px
+        color: $dark
+        margin-bottom: 20px
+        span
+            font-weight: 700
+    &__subtitle
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 30px
+        color: $gray
+        margin-bottom: 50px
+        span
+            font-weight: 500
+    &__btn
+        background: $red-btn
+        box-shadow: 0px 18px 34px rgba(245, 56, 56, 0.55)
+        border-radius: 10px
+        text-decoration: none
+        width: 250px
+        height: 60px
+        display: flex
+        justify-content: center
+        align-items: center
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 25px
+        color: #FFFFFF
+        &:hover
+            box-shadow: 0px 0px 34px rgba(245, 56, 56, 0.55)
+    &__numbers
+        display: flex
+        justify-content: space-around
+        align-items: center
+        box-shadow: 0px 25px 36px rgba(13, 16, 37, 0.05)
+        border-radius: 10px
+        height: 200px
+        width: 100%
+
+        .line
+            background-color: #EEEFF2
+            width: 2px
+            height: 125px
+        .numbers__box
+            display: flex
+            align-items: center
+            img
+                margin-right: 36px
+            .text
+                h3
+                    font-style: normal
+                    font-weight: bold
+                    font-size: 25px
+                    line-height: 30px
+                    color: $dark
+                    margin: 0
+                    margin-bottom: 5px
+                h4
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 20px
+                    line-height: 30px
+                    color: $gray
+                    margin: 0
+
+.features
+    &__block
+        display: flex
+        justify-content: space-between
+        margin-bottom: 130px
+    &__img
+    &__text
+        max-width: 430px
+        width: 100%
+        h2
+            font-style: normal
+            font-weight: 500
+            font-size: 35px
+            line-height: 50px
+            color: $dark
+            margin-bottom: 20px
+        p
+            color: $gray
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 30px
+            margin-bottom: 20px
+        ul
+            margin: 0
+            padding: 0
+            li
+                margin-bottom: 15px
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 30px
+                color: $gray
+                list-style: none
+                background: url('../img/Icon/list-style-check.svg') no-repeat left center
+                padding-left: 30px
+
+.pricing
+    &__section
+        padding: 80px 0 0
+        background: #F6F6F6
+        .map__subtitle
+            margin-bottom: 150px
+
+    &__block
+        display: flex
+        justify-content: space-evenly
+        margin-bottom: 150px
+    &__box
+        background: #FFFFFF
+        border: 2px solid #DDDDDD
+        box-sizing: border-box
+        border-radius: 10px
+        padding: 80px 70px 50px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        text-align: center
+        .box
+            &__header
+
+                img
+                    width: 145px
+                    height: 165px
+                    margin: 0 auto
+                    margin-bottom: 30px
+                h3
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 18px
+                    line-height: 30px
+                    color: $dark
+                    margin: 0
+                    margin-bottom: 30px
+                ul
+                    margin: 0
+                    padding: 0
+                    li
+                        list-style: none
+                        background: url('../img/plan/check.svg') no-repeat left center
+                        padding-left: 40px
+                        text-align: left
+                        margin-bottom: 10px
+            &__footer
+                .price
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 25px
+                    line-height: 30px
+                    color: $dark
+                    margin-bottom: 20px
+                    span
+                        font-weight: 400
+                .btn__select
+                    text-decoration: none
+                    border: 1px solid $red
+                    box-sizing: border-box
+                    border-radius: 50px
+                    width: 150px
+                    height: 45px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 19px
+                    color: $red-btn
+                    &:hover .pricing__box
+                        border: 2px solid #F53838
+                    &:hover
+                        background-color: $red-btn
+                        color: #ffffff
+                        box-shadow: 0px 18px 34px rgba(245, 56, 56, 0.55)
+    &__map
+        padding: 0 40px
+        img
+            max-width: 1060px
+            width: 100%
+            margin: 0 auto
+    &__brand
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+.testimonials
+    &__section
+        background: #F6F6F6
+        padding-bottom: 180px
+        .container
+            position: relative
+    &__title
+        max-width: 450px
+    &__slider
+        display: flex
+    &__box
+        padding: 30px
+        max-width: 400px
+        width: 100%
+        background: #FFFFFF
+        border: 2px solid #DDDDDD
+        box-sizing: border-box
+        border-radius: 10px
+
+        .info
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            align-items: center
+            img
+                margin-right: 20px
+            .text
+                margin-right: auto
+                height: 50px
+            h3
+                margin: 0
+                font-style: normal
+                font-weight: 500
+                font-size: 18px
+                line-height: 30px
+                color: $dark
+
+            h4
+                margin: 0
+                color: $gray
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 30px
+        .rated
+            display: flex
+            align-items: center
+            float: right
+            justify-content: flex-end
+            span
+                margin-right: 10px
+            img
+                margin-right: 0
+        .review
+            margin-top: 20px
+            p
+                font-style: normal
+                font-weight: normal
+                font-size: 16px
+                line-height: 30px
+                color: $dark
+
+.subscribe
+    &__block
+        position: absolute
+        left: 0
+        bottom: -320px
+        max-width: 1080px
+        width: 100%
+        margin: 0 auto
+        padding: 58.5px 70px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        background: #FFFFFF
+        border-radius: 10px
+    &__text
+        max-width: 410px
+        width: 100%
+    &__title
+        font-style: normal
+        font-weight: 500
+        font-size: 35px
+        line-height: 45px
+        color: $dark
+        margin: 0
+        padding: 0
+        margin-bottom: 20px
+    &__subtitle
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 30px
+        margin-bottom: 0
+        margin: 0
+        padding: 0
+        color: $gray
+    &__btn
+        background: $red-btn
+        box-shadow: 0px 18px 34px rgba(245, 56, 56, 0.55)
+        border-radius: 10px
+        text-decoration: none
+        width: 250px
+        height: 60px
+        display: flex
+        justify-content: center
+        align-items: center
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 25px
+        color: #FFFFFF
+        &:hover
+            box-shadow: 0px 0px 34px rgba(245, 56, 56, 0.55)
+
+.footer
+    background: #F8F8F8
+    padding-top: 180px
+    padding-bottom: 100px
+    &__block
+        display: flex
+        justify-content: space-between
+        .logo
+            margin-bottom: 20px
+    &__contact
+        max-width: 340px
+        width: 100%
+        margin-right: auto
+        p
+            font-style: normal
+            font-weight: 400
+            font-size: 16px
+            line-height: 30px
+            color: $gray
+            margin-bottom: 30px
+            span
+                font-weight: 500
+        .social__box
+            display: flex
+            justify-content: space-between
+            max-width: 140px
+            width: 100%
+            margin-bottom: 0
+            a
+                margin: 0
+                padding: 0
+
+        .copy
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 30px
+            color: #AFB5C0
+            margin: 0
+            padding: 0
+            span
+                font-weight: 500
+    &__nav
+        margin-left: 126px
+        h3
+            font-style: normal
+            font-weight: 500
+            font-size: 18px
+            color: $dark
+            margin-bottom: 20px
+        ul
+            padding: 0
+            margin: 0
+            li
+                list-style: none
+                margin-bottom: 10px
+                a
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 16px
+                    line-height: 30px
+                    color: $gray
+                    text-decoration: none
+                    &:hover
+                        border-bottom: 1px solid $gray
+
+.slick-slider
+    min-width: 0
+    position: relative
+
+.slick-list
+    overflow: hidden
+    padding: 0
+
+.slick-track
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    width: 100%
+.slick-initialized
+
+.slick-dotted
+
+.slick-slide
+
+.slick-active
+    border: 2px solid #F53838
+.slick-current
+
+.slick-center
+
+.slick-cloned
+
+.slick-arrow
+    display: none
+
+.slick-prev
+    display: none
+.slick-next
+    display: none
+.slick-disabled
+
+.slick-dots
+
+    & li
+
+    & li.slick-active
+
+    & li button
